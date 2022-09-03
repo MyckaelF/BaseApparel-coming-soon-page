@@ -18,8 +18,10 @@
         Add your email below to stay up-to-date with announcements and our launch deals.
       </p>
       <form class="inputEmail">
-        <input type="email" name="email" placeholder="Email Address">
-        <button type="submit"><img src="images/icon-arrow.svg" alt="arrow icon"></button>
+        <input type="text" name="email" placeholder="Email Address" id="email">
+        <button type="submit" id="submitButton"><img src="images/icon-arrow.svg" alt="arrow icon"></button>
+        <span class="spanError">Please provide a valid email</span>
+        <img src="images/icon-error.svg" alt="icon error" class="errorIcon">
       </form>
     </div>
     <div class="images">
@@ -36,5 +38,6 @@
       Coded by <a href="#">Myckael Fernandes</a>.
     </p>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>

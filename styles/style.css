@@ -63,7 +63,8 @@ body {
     background-color: transparent;
     outline: none;
     border: 1px solid var(--desaturatedRed);
-    padding: 20px 260px 15px 25px;
+    padding: 20px 108px 20px 20px;
+    width: 100%;
     border-radius: 50px;
     color: var(--darkgrayishRed);
     font-family: 'Josefin Sans', sans-serif;
@@ -75,9 +76,9 @@ body {
 
 .inputEmail button {
     position: absolute;
-    right: -4px;
+    right: 0px;
     top: 30px;
-    padding: 14px 40px;
+    padding: 16px 40px;
     border-radius: 50px;
     border: none;
     outline: none;
@@ -90,3 +91,30 @@ body {
     background-image: none;
     background-color: var(--desaturatedRed);
 }
+
+.inputEmail .error {
+    border: 1px solid var(--softRed);
+    margin: 30px 0 10px 0;
+}
+
+.spanError {
+    display: none;
+    margin-top: 5px;
+    color: var(--softRed);
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+.errorIcon {
+    display: none;
+    position: absolute;
+    top: 45px;
+    right: 113px;
+}
+
+.spanError.active,
+.errorIcon.active {
+    display: block;
+}
+
+
