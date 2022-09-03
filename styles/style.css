@@ -1,0 +1,92 @@
+@import url(./variables.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    background-image: linear-gradient( 135deg, hsl(0deg 0% 100%) 0%, hsl(0deg 100% 100%) 10%, hsl(0deg 100% 99%) 20%, hsl(0deg 100% 99%) 30%, hsl(0deg 100% 98%) 40%, hsl(0deg 100% 98%) 50%, hsl(0deg 100% 96%) 60%, hsl(0deg 94% 93%) 70%, hsl(0deg 87% 91%) 80%, hsl(0deg 83% 88%) 90%, hsl(0deg 80% 86%) 100% );
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content {
+    width: 50%;
+    padding: 50px 120px;
+}
+
+.content h2 {
+    margin-top: 80px;
+    color: var(--desaturatedRed);
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 75px;
+    letter-spacing: 9px;
+}
+
+.content h1 {
+    font-size: 80px;
+    text-transform: uppercase;
+    color: var(--darkgrayishRed);
+    letter-spacing: 13px;
+}
+
+.content p {
+    margin-top: 20px;
+    color: var(--desaturatedRed);
+    line-height: 27px;
+    width: 103%;
+}
+
+.images {
+    width: 40%;
+}
+
+.images img {
+    width: 502px;
+}
+
+.inputEmail {
+    position: relative;
+}
+
+.inputEmail input{
+    margin-top: 30px;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid var(--desaturatedRed);
+    padding: 20px 260px 15px 25px;
+    border-radius: 50px;
+    color: var(--darkgrayishRed);
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.inputEmail input::placeholder {
+    color: var(--desaturatedRed);
+}
+
+.inputEmail button {
+    position: absolute;
+    right: -4px;
+    top: 30px;
+    padding: 14px 40px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 500ms ease;
+    background-image: linear-gradient( 135deg, hsl(0deg 80% 86%) 0%, hsl(0deg 80% 85%) 11%, hsl(0deg 79% 84%) 22%, hsl(0deg 79% 82%) 33%, hsl(0deg 78% 81%) 44%, hsl(0deg 77% 80%) 56%, hsl(0deg 77% 78%) 67%, hsl(0deg 76% 77%) 78%, hsl(0deg 75% 76%) 89%, hsl(0deg 74% 74%) 100% );
+}
+
+.inputEmail button:hover {
+    background-image: none;
+    background-color: var(--desaturatedRed);
+}
