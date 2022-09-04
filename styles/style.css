@@ -24,7 +24,7 @@ body {
 }
 
 .content h2 {
-    margin-top: 80px;
+    margin-top: 160px;
     color: var(--desaturatedRed);
     text-transform: uppercase;
     font-weight: 300;
@@ -47,11 +47,12 @@ body {
 }
 
 .images {
-    width: 35%;
+    width: 46%;
 }
 
 .images img {
-    width: 502px;
+    width: 668px;
+    height: 100vh;
 }
 
 .inputEmail {
