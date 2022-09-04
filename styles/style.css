@@ -124,12 +124,13 @@ body {
         height: 100vh;
     }
     .container {
-        max-width: 360px;
+        width: 100%;
+        overflow: hidden;
         flex-direction: column-reverse;
     }
     .content {
         padding: 20px;
-        width: 104%;
+        width: 100%;
     }
     .images {
         width: 100%;
@@ -137,6 +138,7 @@ body {
     .images img {
         width: 375px;
         margin-top: 80px;
+        height: auto;
     }
     .content h2 {
         margin-top: 30px;
@@ -170,8 +172,7 @@ body {
         width: 105px;
     }
     .attribution {
-        position: absolute;
-        text-align: center;
+        display: none;
     }
 }
 
@@ -195,6 +196,7 @@ body {
     .images img {
         width: 393px;
         margin-top: 80px;
+        height: auto;
     }
     .content h2 {
         margin-top: 10px;
@@ -252,6 +254,7 @@ body {
     .images img {
         width: 425px;
         margin-top: 80px;
+        height: auto;
     }
     .content h2 {
         margin-top: 10px;
