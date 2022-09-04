@@ -178,12 +178,13 @@ body {
         height: 100vh;
     }
     .container {
-        max-width: 380px;
+        width: 100%;
+        overflow: hidden;
         flex-direction: column-reverse;
     }
     .content {
         padding: 20px;
-        width: 104%;
+        width: 100%;
     }
     .images {
         width: 100%;
@@ -225,7 +226,63 @@ body {
         width: 100px;
     }
     .attribution {
-        position: absolute;
+        display: none;
+    }
+}
+
+@media (min-width: 401px) and (max-width:430px) {
+    body {
+        height: 100vh;
+    }
+    .container {
+        width: 100%;
+        overflow: hidden;
+        flex-direction: column-reverse;
+    }
+    .content {
+        padding: 20px;
+        width: 100%;
+    }
+    .images {
+        width: 100%;
+        height: 80%;
+    }
+    .images img {
+        width: 425px;
+        margin-top: 80px;
+    }
+    .content h2 {
+        margin-top: 10px;
+        font-size: 50px;
+    }
+    .content h1 {
+        font-size: 50px;
+    }
+    .content p {
+        width: 100%;
+    }
+    .content h1, h2, p {
         text-align: center;
+    }
+    .inputEmail .error {
+        border: 1px solid var(--softRed);
+        margin: 15px 0 1px 0;
+    }
+    .errorIcon {
+        top: 32px;
+    }
+    .inputEmail input {
+        margin-top: 15px;
+    }
+    .inputEmail button {
+        top: 15px;
+    }
+    .logo {
+        position: absolute;
+        top: 28px;
+        width: 100px;
+    }
+    .attribution {
+        display: none;
     }
 }
